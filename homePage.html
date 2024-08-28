@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="../src/Assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="../src/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../src/Assets/Theme/bootstrap(1).css">
+
+    <script src="../src/Assets/js/jquery.min.js"></script>
+    <script src="../src/Assets/lib/Waypoint/lib/jquery.waypoints.min.js"></script>
+    <script src="../src/Assets/lib/CounterUp/jquery.counterup.min.js"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            font-family: "ladyrose";
+        }
+
+        .ladyrose {
+            font-family: "ladyrose";
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .underline {
+            padding-bottom: 3px;
+            text-decoration: underline;
+
+        }
+
+        .poppins {
+            font-family: "bahnschrift";
+        }
+
+        .algerian {
+            font-family: algerian;
+        }
+
+        .wheat {
+            background-color: rgb(250, 156, 15);
+        }
+
+        .white {
+            background-color: rgba(223, 228, 235, 0.918);
+        }
+
+        #carou-img-1 {
+            background-image: url(../public/Images/Depositphotos_4714219_original.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            animation: bg 30s ease-in infinite;
+            /* opacity: 0.8; */
+        }
+
+        .link {
+            color: #EB7914;
+        }
+
+        .black {
+            background-color: #15244025;
+        }
+
+        .clean {
+            color: rgb(246, 247, 246);
+        }
+
+        #price1,
+        #price2,
+        #price1 {
+            position: absolute;
+            top: 10px;
+            right: 0;
+        }
+
+        #love1:hover,
+        #love2:hover,
+        #love3:hover {
+            background-color: #EB7914;
+        }
+
+        .bgClean {
+            background-color: rgb(246, 247, 246);
+        }
+
+        .count-bg {
+            background-color: rgb(94, 93, 93);
+        }
+
+        .navBg {
+            background-color: rgba(189, 189, 189, 0.836);
+        }
+
+        .navColor {
+            color: rgb(9, 29, 53);
+        }
+
+        .textShadow {
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.473);
+        }
+
+        .fontawesome {
+            font-family: "Open Market";
+        }
+
+        .behavior {
+            font-family: "behavior";
+        }
+
+        #sombre {
+            background-color: rgba(40, 41, 43, 0.877);
+            transition: background 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .bgGradient {
+            background: linear-gradient(180deg, #c77833 50%, #000000e8 60%);
+        }
+
+        #sombre:hover {
+            background: linear-gradient(180deg, #c77833 50%, #000000e8 60%);
+            transform: scale(1.1);
+        }
+
+        section:nth-child(odd) {
+            background-color: rgb(246, 247, 246);
+            ;
+        }
+
+        section:nth-child(even) {
+            background-color: rgba(189, 189, 189, 0.836);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- =============================================== Header ================================== -->
+        <header>
+
+            <nav class="navbar navbar-expand-md fixed-top" id="navbar">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+                    <div class="d-flex justify-content-center align-items-center ">
+                        <a href="#logo" id="logo" class="navbar-brand">
+                            <img src="../public/Images/logo.png" id="logo" alt="Logo de mon site" height="50"
+                                width="auto">
+                        </a>
+                        <button class="navbar-toggler bg-warning text-white p-3" id="toggle" data-bs-toggle="collapse"
+                            data-bs-target="#navbarcollapse">
+                            <i class="fa fa-list"></i>
+                        </button>
+                    </div>
+                    <div class="research d-lg-inline d-none ">
+                        <form action="" method="post" class="form-inline">
+                            <div class="input-group">
+                                <input type="text" name="search" id="search" class="form-control text-warning"
+                                    placeholder="Rechercher un bien ">
+                                <button class="btn btn-light text-dark " id="arrondi" type="submit">
+                                    <i class="fa fa-search icon text-warning" id="search_icon"></i>
+                                </button>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarcollapse"
+                        style="transition: 0.8s;">
+
+                        <ul class="navbar-nav  align-items-center" id="liens">
+                            <li class="nav-item">
+                                <a href="#accueil" class="menu1  nav-link active lien " data-bs-toggle="tooltip"
+                                    data-placement="top" title="Accueil!">
+                                    <span class="texte">Accueil</span>
+                                </a>
+                            </li>
+                            <li class="location nav-item">
+                                <a href="#louer" class="menu2 nav-link lien no-wrap" data-bs-toggle="tooltip"
+                                    data-placement="bottom" title="Louer">
+                                    <span class="texte">Louer</span>
+                                    <i class="fa fa-angle-down texte arrow"></i>
+                                </a>
+                            </li>
+                            <li class="location nav-item">
+                                <a href="#vendre" class="menu3 nav-link lien" data-bs-toggle="tooltip"
+                                    data-placement="bottom" title="Vendre">
+                                    <span class="texte">Vendre</span>
+                                    <i class="fa fa-angle-down texte arrow"></i>
+                                </a>
+                            </li>
+                            <li class="location nav-item">
+                                <a href="#help" class="menu3 nav-link lien" data-bs-toggle="tooltip"
+                                    data-placement="bottom" title="Aide">
+                                    <span class="texte">Aide</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button type="button" class="btn  text-white dropdown-toggle" id="bg12"
+                                        data-bs-toggle="dropdown">
+                                        <i class="fa fa-user-circle fs-5"></i>
+                                        <span class="profil">Se connecter</span>
+                                    </button>
+                                    <div class="dropdown-menu submenu_dash " id="bg12">
+                                        <a class="dropdown-item subDash " href="#">
+                                            <i class="fa fa-home fs-5 icoDropdown"></i>
+                                            <span class="dash_text">Dashboard</span>
+                                        </a>
+                                        <a class="dropdown-item subDash" href="#">
+                                            <i class="fa fa-heart fs-5 icoDropdown"></i>
+                                            <span class="dash_text">Favoris</span>
+                                        </a>
+                                        <a class="dropdown-item subDash" href="#">
+                                            <i class="fa fa-chevron-circle-left icoDropdown fs-5"></i>
+                                            <span class="dash_text">Deconnexion</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+
+        </header>
+        <!-- =============================================== END Header ============================== -->
+
+        <!-- ============================================== Start Main ============================== -->
+        <main>
+
+
+            <!-- ========================================== Accueil ========================== -->
+            <section aria-label="Accueil" class="position-relative bg-dark border-dark border-5">
+                <div class="position-absolute w-100 vh-100 d-flex justify-content-center align-items-center">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque optio neque explicabo quibusdam vel
+                    quis
+                    mollitia error provident laborum voluptas!
+                </div>
+                <p class="vh-100 img-fluid d-block" id="carou-img-1"></p>
+
+            </section>
+
+            <!-- ========================================== Formulaire de Recherche ========================== -->
+            <section aria-label="Formulaire de recherche">
+                <h1 class="h1 display-4 text-center poppins"><b>Rechercher un bien</b></h1>
+                <form class="form-inline wheat my-3" method="post">
+                    <div class="row row-cols-lg-6 row-cols-sm-2 row-cols-md-3 row-cols-1 gy-2 mx-5 poppins">
+                        <div class="col">
+                            <label for="Localisation" class="form-label">Localisation <span
+                                    class="text-danger">*</span></label>
+                            <select name="Localisation" id="Localisation" class="form-select" required>
+                                <option value="1">Toute les localisations</option>
+                                <option value="2">Bafoussam</option>
+                                <option value="3">Yaounde</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="propriete" class="form-label">Type de propriete <span
+                                    class="text-danger">*</span></label>
+                            <select name="propriete" id="propriete" class="form-select" required>
+                                <option value="1">Type de la propriete</option>
+                                <option value="2">Appartement</option>
+                                <option value="3">Studio</option>
+                                <option value="3">Chambre</option>
+                                <option value="3">Duplex</option>
+                                <option value="3">Terrain</option>
+                                <option value="3">Appartement meublé</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="contrat" class="form-label">Type de contrat</label>
+                            <select name="contrat" id="contrat" class="form-select">
+                                <option value="1">Type de contrat</option>
+                                <option value="2">A vendre</option>
+                                <option value="3">A louer</option>
+                                <option value="3">Toutes les offres</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="Budget" class="form-label">Budget minimal</label>
+                            <input type="number" min="0" step="1" class="form-control" id="Budget" name="BudgetMin"
+                                placeholder="Budget minimal">
+                        </div>
+                        <div class="col">
+                            <label for="" class="form-label">Budget minimal</label>
+                            <input type="number" min="0" step="1" class="form-control" name="BudgetMax"
+                                placeholder="Budget maximal">
+
+                        </div>
+                        <div class="col">
+                            <label for="Devise" class="form-label">Devise</label>
+                            <select name="Devise" id="Devise" class="form-select text-center">
+                                <option value="">$</option>
+                                <option value="">FCFA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-3 pb-4">
+                        <div class="col-lg-3 col-6">
+                            <button class="btn btn-block w-100 btn-outline-dark active"
+                                type="submit">Rechercher</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+            <section aria-label="Quelques presentations des services">
+
+            </section>
+            <!-- ========================================== Deco et compte ==================================== -->
+            <section aria-label="Deco et compte ">
+                <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 bgClean justify-content-center my-3 vh-50"
+                    aria-label="Cards">
+                    <div class="col  text-center">
+                        <div class=" bg-transparent shadow border-5 rounded-4 p-3">
+                            <div class="card-icon mb-1 link"><i class="fa fa-warehouse fa-4x "></i></div>
+                            <span class="counter badge badge-pill rounded-pill fs-2 text-dark">30000</span>
+                            <div class="card-title poppins fs-3 text-dark">Studios</div>
+                        </div>
+                    </div>
+                    <div class="col mt-3 mt-lg-0 text-center">
+                        <div class=" bg-transparent shadow border-5 rounded-4 p-3">
+                            <div class="card-icon mb-1 link"><i class="fa fa-car fa-4x"></i></div>
+                            <div class="counter badge badge-pill rounded-pill fs-2 text-dark">20900</div>
+                            <div class="card-title  poppins fs-3 text-dark">Voitures</div>
+                        </div>
+                    </div>
+                    <div class="col mt-3 mt-lg-0 text-center">
+                        <div class=" bg-transparent shadow border-5 rounded-4 p-3">
+                            <div class="card-icon mb-1 link"><i class="fa fa-hotel fa-4x "></i></div>
+                            <div class="counter badge badge-pill rounded-pill fs-2 text-dark">3706</div>
+                            <div class="card-title  poppins fs-3 text-dark">Appartements</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <nav class="navbar bg-secondary">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active"><a href="#" class="text-decoration-none text-dark">Accueil</a></li>
+                    <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-dark">Accueil</a></li>
+                    <li class="breadcrumb-item "><a href="#" class="text-decoration-none text-dark">Accueil</a></li>
+                </ol>
+            </nav> -->
+            <!-- =========================================== Images de profils ================================ -->
+            <section aria-label="Nos meilleures categories">
+                <h1 class="text-center">Nos categories les plus populaires</h1>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  gy-3">
+
+                            <div class="col opacity-75">
+                                <div class="card">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active rounded-4 position-relative ">
+
+                                                <img src="../public/Images/class-a-office-600x375.jpg" height="300px"
+                                                    width="auto" alt="Immeuble" class="rounded-4 img-fluid">
+                                                <div class="carousel-caption black">
+
+                                                    <p
+                                                        class="text-dark text-center poppins text-white d-flex h-100 align-items-center">
+                                                    <h2>Appartements</h2>
+                                                    <h4 class="counter">368 </h4>proprietes <br>
+                                                    <a href="#" class="btn p-2 text-white my-1"
+                                                        id="sombre">Consulter</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col opacity-75">
+                                <div class="card">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active rounded-4 position-relative ">
+
+                                                <img src="../public/Images/Depositphotos_4714219_original.jpg"
+                                                    alt="Immeuble" class="rounded-4 img-fluid">
+                                                <div class="carousel-caption black">
+                                                    <p
+                                                        class="text-dark text-center poppins text-white d-flex h-100 align-items-center">
+                                                    <h2>Studios</h2>
+                                                    <h4 class="counter">602</h4> proprietes <br>
+                                                    <a href="#" class="btn p-2 text-white my-1"
+                                                        id="sombre">Consulter</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col opacity-75">
+                                <div class="card">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active rounded-4 position-relative ">
+
+                                                <img src="../public/Images/ai-generated-8886445_640.webp" alt="Immeuble"
+                                                    height="20" class="rounded-4 img-fluid">
+                                                <div class="carousel-caption black">
+                                                    <p
+                                                        class="text-dark text-center poppins text-white d-flex h-100 align-items-center">
+                                                    <h2>Terrains</h2>
+                                                    <h4 class="counter">67 </h4>proprietes <br>
+                                                    <a href="#" class="btn p-2 text-white my-1"
+                                                        id="sombre">Consulter</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col opacity-75">
+                                <div class="card">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active rounded-4 position-relative ">
+
+                                                <img src="../public/Images/Depositphotos_4217511_original.jpg"
+                                                    alt="Immeuble" class="rounded-4 img-fluid">
+                                                <div class="carousel-caption black">
+                                                    <p
+                                                        class="text-dark text-center poppins text-white d-flex h-100 align-items-center">
+                                                    <h2>Duplex</h2>
+                                                    <h4 class="counter">200 </h4>proprietes <br>
+                                                    <a href="#" class="btn p-2 text-white my-1"
+                                                        id="sombre">Consulter</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col opacity-75">
+                                <div class="card">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active rounded-4 position-relative ">
+
+                                                <img src="../public/Images/bright-apartment.jpg" alt="Immeuble"
+                                                    class="rounded-4 img-fluid">
+                                                <div class="carousel-caption black">
+                                                    <p
+                                                        class="text-dark text-center poppins text-white d-flex h-100 align-items-center">
+                                                    <h2>Villa</h2>
+                                                    <h4 class="counter">451 </h4>proprietes <br>
+                                                    <a href="#" class="btn p-2 text-white my-1 "
+                                                        id="sombre">Consulter</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col opacity-75">
+                                <div class="card">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+
+                                        <div class="carousel-inner ">
+                                            <div class="carousel-item active rounded-4 position-relative ">
+
+                                                <img src="../public/Images/bright-and-sunny-flat-600x375.jpg"
+                                                    alt="Immeuble" class="rounded-4 img-fluid">
+                                                <div class="carousel-caption black">
+                                                    <p
+                                                        class="text-dark text-center poppins text-white d-flex h-100 align-items-center">
+                                                    <h2>Chambre</h2>
+                                                    <h4 class="counter">503 </h4>proprietes <br>
+                                                    <a href="#" class="btn p-2 text-white my-1"
+                                                        id="sombre">Consulter</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mt-3 pb-4">
+                            <div class="col-lg-3 col-6">
+                                <a href="#" class="btn bgGradient text-white fs-4 btn-outline-dark w-100"
+                                    type="submit">Voir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section aria-label="Nos meilleures offres">
+                <h1 class="text-center">Nos meilleures offres</h1>
+                <h5 class="text-center mb-4 text-muted">Consulter toute les caracteristiques de nos meilleures
+                    proprietes</h5>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  gy-3">
+
+                            <div class="col pb-4">
+                                <div class="card shadow">
+                                    <div class="carousel slide" id="bestProducts" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#bestProducts" data-bs-slide-to="0"
+                                                class="active"></button>
+                                            <button type="button" data-bs-target="#bestProducts"
+                                                data-bs-slide-to="1"></button>
+                                            <button type="button" data-bs-target="#bestProducts"
+                                                data-bs-slide-to="2"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active rounded-4 position-relative">
+
+                                                <img src="../public/Images/Depositphotos_5780313_original.jpg"
+                                                    alt="Immeuble" class=" img-fluid">
+
+                                                <span class="text-white wheat p-1" id="price1">A vendre</span>
+                                                
+                                            </div>
+                                            <div class="carousel-item rounded-4">
+                                                <img src="../public/Images/Depositphotos_4714219_original.jpg"
+                                                    alt="Immeuble" class="rounded-4 img-fluid">
+                                                    <span class="text-white wheat p-1" id="price1">A vendre</span>
+                                                    <button class="btn navBg px-2  py-1 rounded-0" id="love1">
+                                                        <span class="fa fa-heart text-white"></span>
+                                                    </button>
+                                               
+                                            </div>
+                                            <div class="carousel-item rounded-4">
+                                                <img src="../public/Images/Depositphotos_4217511_original.jpg"
+                                                    alt="Immeuble" class="rounded-4 img-fluid">
+                                                    <span class="text-white wheat p-1" id="price1">A vendre</span>
+                                                    <button class="btn navBg px-2  py-1 rounded-0" id="love1">
+                                                        <span class="fa fa-heart text-white"></span>
+                                                    </button>
+                                            </div>
+                                        </div>
+                                        <span class="carousel-control-prev" data-bs-target="#bestProducts"
+                                            data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon"></span>
+                                        </span>
+                                        <span class="carousel-control-next" data-bs-target="#bestProducts"
+                                            data-bs-slide="next">
+                                            <span class="carousel-control-next-icon"></span>
+                                            </button>
+                                    </div>
+                                    <div class="card-body p-2">
+                                        <div class="card-title ladyrose text-warning ">Appartement Moderne a louer</div>
+                                        <span class="small text-muted">
+                                            <i class="fa fa-home"></i>
+                                            Bafoussam camoco, rue 12 derriere cami toyota
+                                        </span><br>
+                                        <span class="small text-dark"><b><i class="fa fa-cart-shopping me-1"></i>Montant: 700.000.000 FCFA</b></span>
+                                        <div class="features no-wrap">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <i class="fa fa-bed small"></i>
+                                                    <span class="small text-dark"><b>chambres: 12 </b></span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <i class="fa fa-tint small"></i>
+                                                    <span class="small text-dark"><b>Salle de bain: 2</b></span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <i class="fa fa-hotel small"></i>
+                                                    <span class="small text-dark ps-1"><b>Cuisine: 3</b></span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <i class="fa fa-graduation-cap small"></i>
+                                                    <span class="small text-dark"><b>Superficie: 2000 m²</b></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer ">
+                                        <div class="row justify-content-around align-items-center ">
+                                            <div class="col">
+                                                <span class="small poppins navColor">Pubié il y a 3 jours</span>
+                                            </div>
+                                           <div class="col text-center">
+                                            <button class="btn navBg px-2  py-1 rounded-0" id="love1">
+                                                <span class="fa fa-heart text-white"></span>
+                                            </button>
+                                                <a href="#" class="btn btn-outline-warning p-1 active"><small>Details</small> <i class="fa fa-arrow-right"></i></a>
+                                           </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Temoignages -->
+            <section aria-label="temoignage" class="mt-3 shadow">
+                <h1 class="text-center poppins text-white count-bg">Des temoignages de nos clients satisfaits</h1>
+
+                <div class="carousel slide text-center" id="carou" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="card bg-transparent">
+                            <div class="carousel-item active position-relative">
+                                <div class="card-header">
+                                    <img src="../public/Images/person2.jpg" class="rounded-circle" height="200"
+                                        width="auto">
+                                </div>
+
+                                <div class="card-body">
+                                    <h2 class="text-white fs-5 textShadow">Teffo Martial</h2>
+                                    <h3 class="small link behavior fs-4">Developpeur Web</h3>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-6">
+                                            <p class="text-justify fontawesome">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+                                                molestias.
+                                                Ipsam est id fugit incidunt tenetur libero dolor similique pariatur
+                                                quaerat ab
+                                                assumenda sunt explicabo delectus omnis voluptate obcaecati veniam, eum
+                                                fugiat
+                                                voluptatem reiciendis asperiores quo! Laudantium ipsam esse tempore
+                                                molestias
+                                                temporibus vero in cum, sit dignissimos sunt nisi incidunt!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <div class="card-header">
+                                    <img src="../public/Images/person5.jpg" class="rounded-circle" height="200"
+                                        width="auto">
+                                </div>
+
+                                <div class="card-body">
+                                    <h2 class="text-white fs-5 textShadow">Sonkoua Ravalona</h2>
+                                    <h3 class="small link behavior fs-4">Consultant en cybersecurite</h3>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-6">
+                                            <p class="text-justify fontawesome">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+                                                molestias.
+                                                Ipsam est id fugit incidunt tenetur libero dolor similique pariatur
+                                                quaerat ab
+                                                assumenda sunt explicabo delectus omnis voluptate obcaecati veniam, eum
+                                                fugiat
+                                                voluptatem reiciendis asperiores quo! Laudantium ipsam esse tempore
+                                                molestias
+                                                temporibus vero in cum, sit dignissimos sunt nisi incidunt!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <div class="card-header">
+                                    <img src="../public/Images/person6.jpg" class="rounded-circle" height="200"
+                                        width="auto">
+                                </div>
+
+                                <div class="card-body">
+                                    <h2 class="text-white fs-5 textShadow">Natalia Vasquez</h2>
+                                    <h3 class="small link behavior fs-4">Agent immobilier</h3>
+                                    <div class="row justify-content-center">
+                                        <div class="col-10 col-lg-6">
+                                            <p class="text-justify fontawesome ">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+                                                molestias.
+                                                Ipsam est id fugit incidunt tenetur libero dolor similique pariatur
+                                                quaerat ab
+                                                assumenda sunt explicabo delectus omnis voluptate obcaecati veniam, eum
+                                                fugiat
+                                                voluptatem reiciendis asperiores quo! Laudantium ipsam esse tempore
+                                                molestias
+                                                temporibus vero in cum, sit dignissimos sunt nisi incidunt!
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carou" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon fs-2 wheat"></span>
+                    </button>
+                    <button class="carousel-control-next " type="button" data-bs-target="#carou" data-bs-slide="next">
+                        <span class="carousel-control-next-icon wheat"></span>
+                    </button>
+                </div>
+            </section>
+        </main>
+        <!-- ============================================= End Main ================================= -->
+        <div class="fixed-bottom d-none m-3  text-end" id="up">
+            <button class="btn btn-outline-dark navBg rounded-pill px-3">
+                <a href="#" class="nav-link"><i class="fa fa-angle-up fa-2x link"></i></a>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="../src/Assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".counter").counterUp({
+                delay: 10,
+                time: 1200
+            });
+
+            // Gestion du scroll de la navbar
+            let nav = $("#navbar");
+            window.addEventListener("scroll", function () {
+                // scrollY: Retourne le nombre de pixels de la page actuellement defilée verticalement
+                if (window.scrollY > 100) {
+                    nav.addClass('navBg shadow ');
+                    $('span').addClass("link")
+                    $("#up").removeClass("d-none");
+                } else {
+                    nav.removeClass('navBg shadow ');
+                    $('span').removeClass("link")
+                    $("#up").addClass("d-none");
+                }
+            })
+
+            // Appel du carousel d'images
+            $('.carousel').carousel({
+                // Duree entre les slides
+                // interval: 3000,
+                // 
+                wrap: false,
+                // Defiliement infini
+                ride: false
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/Assets/css/index.css">
+    <link rel="stylesheet" href="src/Assets/fonts/css/all.min.css">
+    <!-- <link rel="stylesheet" href="src/Assets/css/bootstrap.min3.css"> -->
+    <link rel="stylesheet" href="src/Assets/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar nav-2">
+                <a href="#" class="logo nav-link">
+                    <img src="public/Images/logo.png" id="logo" alt="Mon logo" height="70" width="auto">
+                </a>
+                <form action="">
+                    <div class="research">
+                        <label for="search"></label>
+                        <input type="text" name="search" id="search" placeholder="Rechercher un bien ">
+                        <i class="fa fa-search fa-2x" id="search-icon"></i>
+                    </div>
+                </form>
+                <ul class="menu">
+                    <li>
+                        <a href="#accueil" class="menu1  nav-link">
+                            <i class="fa fa-home color-icons"></i>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li class="location nav-item">
+                        <a href="#louer" class="menu2 nav-link">
+                            <i class="fa fa-truck color-icons"></i>
+                            <span>Louer</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="subLocation">
+                            <div class="colonne-1">
+                                <li>
+                                    <a href="#">Voitures</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terrains </a>
+                                </li>
+                                <li>
+                                    <a href="#">Motos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Appartement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Appartement</a>
+                                </li>
+                            </div>
+                            <div class="colonne-2">
+                                <li>
+                                    <a href="#">Voitures</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terrains </a>
+                                </li>
+                                <li>
+                                    <a href="#">Motos</a>
+                                </li>
+                                <li>
+                                    <a href="#">Appartement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Appartement</a>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#vendre" class="menu3 nav-link">
+                            <i class="fa fa-cart-shopping color-icons"></i>
+                            <span>Vendre</span>
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#help" class="menu3 nav-link">
+                            <i class="fa fa-question-circle color-icons"></i>
+                            <span>Aide</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#help" class="menu3">
+                            <i class="fa fa-user-circle fa-2x"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="login text-decoration-none">Se connecter</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navbar nav-1">
+                <ul class="call">
+                    <li>
+                        <a href="tel:+237 698923787" class="link">
+                            <i class="fa fa-phone-square fa-rotate-180"></i>
+                            <span>698923787</span>
+
+                        </a>
+                    </li>
+                    <li>
+                        <span>
+                            <a href="mailto:tchoupoujaphet@gmail.com">
+                                <i class="fa fa-inbox"></i>
+                                <span>tchoupoujaphet@gmail.com</span>
+                            </a>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="social-media">
+                    <span class="contact">Nous contacter:</span>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </ul>
+                <button class="btn saveGood"><i class="fa fa-anchor"
+                        style="color: rgb(111, 3, 39); font-size: 1.4em;"></i> Enregistrer un bien</button>
+            </nav>
+        </header>
+        <main>
+            <section class="content content-1">
+
+                <!-- <div class="texte">
+                <h1>Bienvenue chez votre courtier immobilier</h1>
+                <p>Gerez vos biens immobiliers avec le meilleur logiciel gratuit de gestion locative</p>
+                <span>Rencontrez des millions de proprietaires, et une panoplie des biens <br>mis sur pied juste pour
+                    vous satisfaire</span>
+            </div>
+            <div class="image">
+                <img src="public/Images/h5.jpg" class="imageAccueil" id="HomeImage" alt="HomeImage" width="700px">
+            </div> -->
+            </section>
+
+            <section class="content content-2">
+                <h1 align="center" class="rechercher">Rechercher un bien</h1>
+
+                <form action="#" method="post" class="form-bien">
+                    <div class="row">
+                        <div class="col-2 col-md-3 col-lg-2">
+                            <button class="btn" type="button">Automobile</button>
+                            <button class="btn" type="button">Immobilier</button>
+                        </div>
+                        <div class="text-center mb-4">
+
+                        </div>
+                        <div>
+                            <div class="ligne">
+                                <div class="colonne">
+                                    <label for="type" class="label">Type de la propriete</label>
+                                    <select name="type" id="type" class="select">
+                                        <option value="1">Cat 1</option>
+                                        <option value="2">Cat 2</option>
+                                        <option value="3">Cat 3</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="contrat" class="label">Type de contrat</label>
+                                    <select name="contrat" id="contrat" class="select">
+                                        <option value="1">contrat 1</option>
+                                        <option value="2">contrat 2</option>
+                                        <option value="3">contrat 3</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="prix" class="label">Prix</label>
+                                    <input type="number" min="0" step="1" name="prix" class="input" id="prix"
+                                        placeholder="prix du bien">
+                                </div>
+                                <div class="colonne">
+                                    <label for="etatBien" class="label">Etat general du bien</label>
+                                    <select name="etatBien" id="etatBien" class="select">
+                                        <option value="1">Neuf</option>
+                                        <option value="2">Vieux</option>
+                                        <option value="3">Depuis peu</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="villeBien" class="label">Ville</label>
+                                    <select name="villeBien" id="villeBien" class="select">
+                                        <option value="1">Bafoussam</option>
+                                        <option value="2">Douala</option>
+                                        <option value="3">Autres...</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="quartierBien" class="label">Quartier</label>
+                                    <select name="quartierBien" id="quartierBien" class="select">
+                                        <option value="1">Ekounou</option>
+                                        <option value="2">TPO</option>
+                                        <option value="3">Autres...</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="chambre" class="label">Pieces</label>
+                                    <select name="chambre" id="chambre" class="select">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="Autre">Autres</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="libelle" class="label">Titre</label>
+                                    <input type="text" min="0" step="0" class="input text-center" name="libelle"
+                                        id="libelle" placeholder="Titre de la propriete">
+                                </div>
+                                <div class="colonne">
+                                    <label for="superficie" class="label">Superficie</label>
+                                    <input type="number" min="0" step="0" class="input" name="superficie"
+                                        id="superficie" placeholder="Superficie">
+                                </div>
+                                <div class="colonne">
+                                    <label for="unite" class="label">Unite</label>
+                                    <select name="chambre" id="chambre" class="select">
+                                        <option value="1">m²</option>
+                                        <option value="2">ha</option>
+                                    </select>
+                                </div>
+                                <div class="colonne">
+                                    <label for="statut" class="form-label">Statut</label>
+                                    <select name="statut" id="statut" class="form-select">
+                                        <option value="1">Neuf</option>
+                                        <option value="2">Ancien</option>
+                                    </select>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                </form>
+            </section>
+            <section class="content content-3">
+                <h1 align="center">Rencontrer d'autres agents immobiliers</h1>
+            </section> -->
+            <section class="content content-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab exercitationem rem architecto expedita,
+                nostrum
+                dolorem iusto neque enim at debitis ut illum quasi ducimus cum nulla et eligendi laboriosam odio nemo
+                maxime
+                aliquid. Nulla natus commodi ut nesciunt nostrum aut sequi, placeat eius ab eum eaque rerum laudantium
+                corporis voluptatum. Optio, fuga accusantium. Voluptates consectetur vero maxime possimus assumenda
+                harum
+                impedit porro mollitia id ab perspiciatis exercitationem, inventore placeat ratione repellendus.
+                Laboriosam,
+                veniam? Nostrum distinctio ipsam aperiam nisi quasi iste modi ipsa dolores voluptatibus impedit pariatur
+                aliquid vel cum doloremque, illum dicta et voluptatum iusto magnam quis repudiandae qui. Porro iste iure
+                illo quidem maiores exercitationem harum. Officia suscipit numquam iure et rem, nemo quae, ratione
+                voluptatum molestias iusto adipisci architecto, beatae hic atque. Asperiores aliquam pariatur mollitia,
+                in
+                totam officiis dolor officia. Iusto et pariatur totam nostrum ut ipsam. Provident perspiciatis minima,
+                quam
+                quas sunt vel iure. Nostrum aperiam reiciendis reprehenderit excepturi similique voluptatum commodi,
+                nemo,
+                quas optio dolorum aut distinctio a odit itaque est hic ad! Consequatur id quisquam quasi maiores quos
+                reiciendis assumenda minima sed cumque deserunt repellendus alias vero explicabo quibusdam officia odit
+                laborum corrupti vel, doloribus, ipsa, nemo voluptates natus. Quo officia nesciunt aliquam perspiciatis?
+            </section>
+        </main>
+
+        <footer>
+            Mon bas de page
+        </footer>
+    </div>
+
+</body>
+
+</html>

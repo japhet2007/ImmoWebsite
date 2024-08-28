@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span>LOHO</span>
+        <ul>
+            <li>Accueil</li>
+            <li>A propos</li>
+            <li>Contact</li>
+        </ul>
+    </header>
+    <div class="layer"></div>
+    <section></section>
+    <div class="text">
+        <h2>Welcome To <br><span>Tailand</span></h2>
+    </div>
+    <section class="sec2"></section>
+    <!-- <script>
+        let layer=document.querySelector(".layer");
+        window.addEventListener("scroll", function(){
+            let value=window.scrollY;
+            layer.style.left=value+"px";
+        })
+    </script> -->
+    <script>
+        document.addEventListener("scroll", function(){
+            let header=document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY>0);
+        })
+    </script>
+</body>
+</html>

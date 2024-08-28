@@ -1,0 +1,45 @@
+/**
+ * Minified by jsDelivr using clean-css v5.3.2.
+ * Original file: /npm/multiple-select-js@1.2.6/dist/css/multiple-select.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+.dropdown-select {
+    position: absolute;
+    z-index: 3;
+    border: 1px solid rgba(220, 220, 220, .8);
+    outline: 0;
+    left: 0;
+    right: 0;
+    display: none
+}
+
+.dropdown-select:focus {
+    outline: 0
+}
+
+.dropdown-select ul {
+    overflow-y: auto
+}
+
+.dropdown-select ul li {
+    cursor: pointer;
+    border-left: none;
+    border-right: none
+}
+
+.dropdown-select ul li:not(.list-group-item-secondary):not(.list-group-item-primary).hover,
+.dropdown-select ul li:not(.list-group-item-secondary):not(.list-group-item-primary):hover {
+    background-color: rgba(220, 220, 220, .3)
+}
+
+.dropdown-select ul li:not(.list-group-item-secondary).list-group-item-primary.hover,
+.dropdown-select ul li:not(.list-group-item-secondary).list-group-item-primary:hover {
+    font-weight: 700
+}
+
+.opened .dropdown-select {
+    display: block
+}
+
+/*# sourceMappingURL=/sm/9762d01ef31024696a0db769b31a3e7f4544f417ad2f655741e1f3a1e5038cae.map */

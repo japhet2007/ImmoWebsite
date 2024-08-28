@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="src/Assets/css/index.css">
+    <link rel="stylesheet" href="src/Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/Assets/fonts/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar bg-dark text-auto mb-0">
+        <ul class="call">
+            <i class="fa fa-phone"></i>
+            <span><a href="tel:+237 698923787" class="link">698923787</a></span>
+            <span>Email</span>
+            <span>
+                <a href="mailto:tchoupoujaphet@gmail.com">tchoupoujaphet@gmail.com</a>
+            </span>
+        </ul>
+        <ul class="social-media">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-whatsapp"></i>
+            <i class="fa fa-linkedIn"></i>
+            <i class="fa fa-Instagram"></i>
+        </ul>
+        <ul class="profil-user">
+            <i class="fa fa-user-circle fa-2x"></i>
+            <a href="" class="login">Se connecter</a>
+            <a href="" class="signup">S'inscrire</a>
+        </ul>
+    </nav>
+    <nav class="navbar bg-warning">
+        <a href="#" class="logo">
+            <img src="public/Images/logo.png" alt="Mon logo" height="50" width="auto">
+        </a>
+        <ul class="menu">
+            <li><a href="#accueil" class="menu1">Accueil</a></li>
+            <li><a href="#louer" class="menu2">Louer</a></li>
+            <li><a href="#vendre" class="menu3">Vendre</a></li>
+            <li><a href="#saveGood" class="menu4">Enregistrer un bien</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <section class="content content-1">
+            <div class="texte">
+                <h1>Bienvenue chez votre courtier immobilier</h1>
+                <p>Gerez vos biens immobiliers avec le meilleur logiciel gratuit de gestion locative</p>
+                <span>Rencontrez des millions de proprietaires, et une panoplie des biens <br>mis sur pied juste pour
+                    vous satisfaire</span>
+            </div>
+            <div class="image">
+                <img src="public/Images/h5.jpg" class="img-responsive img-fluid" alt="HomeImage" width="700px">
+            </div>
+
+        </section>
+        <section class="content content-2">
+            <h1 align="center" class="h1 nowrap text-uppercase py-3">Rechercher un bien</h1>
+
+            <form action="#" method="post" class="form container">
+                <div class="text-center mb-4">
+                    <button class="btn btn-outline-success " type="button">Automobile</button>
+                    <button class="btn btn-outline-warning active" type="button">Immobilier</button>
+                </div>
+
+                <div>
+                    <div class="row">
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="type" class="form-label">Type de la propriete</label>
+                            <select name="type" id="type" class="form-select">
+                                <option value="1">Cat 1</option>
+                                <option value="2">Cat 2</option>
+                                <option value="3">Cat 3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2 col-md-4  col-sm-6">
+                            <label for="contrat" class="form-label">Type de contrat</label>
+                            <select name="contrat" id="contrat" class="form-select">
+                                <option value="1">contrat 1</option>
+                                <option value="2">contrat 2</option>
+                                <option value="3">contrat 3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="prix" class="form-label">Prix</label>
+                            <input type="number" min="0" step="1" name="prix" class="form-control" id="prix"
+                                placeholder="prix du bien">
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="etatBien" class="form-label">Etat general du bien</label>
+                            <select name="etatBien" id="etatBien" class="form-select">
+                                <option value="1">Neuf</option>
+                                <option value="2">Vieux</option>
+                                <option value="3">Depuis peu</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="villeBien" class="form-label">Ville</label>
+                            <select name="villeBien" id="villeBien" class="form-select">
+                                <option value="1">Bafoussam</option>
+                                <option value="2">Douala</option>
+                                <option value="3">Autres...</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="quartierBien" class="form-label">Quartier</label>
+                            <select name="quartierBien" id="quartierBien" class="form-select">
+                                <option value="1">Ekounou</option>
+                                <option value="2">TPO</option>
+                                <option value="3">Autres...</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="chambre" class="form-label">Pieces</label>
+                            <select name="chambre" id="chambre" class="form-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="Autre">Autres</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6  col-md-4 col-sm-6">
+                            <label for="libelle" class="form-label">Titre</label>
+                            <input type="text" min="0" step="0" class="form-control text-center" name="libelle"
+                                id="libelle" placeholder="Titre de la propriete">
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="superficie" class="form-label">Superficie</label>
+                            <input type="number" min="0" step="0" class="form-control" name="superficie" id="superficie"
+                                placeholder="Superficie">
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="unite" class="form-label">Unite</label>
+                            <select name="chambre" id="chambre" class="form-select">
+                                <option value="1">m²</option>
+                                <option value="2">ha</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2  col-md-4 col-sm-6">
+                            <label for="statut" class="form-label">Statut</label>
+                            <select name="statut" id="statut" class="form-select">
+                                <option value="1">Neuf</option>
+                                <option value="2">Ancien</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+            </form>
+        </section>
+        <!-- <section class="content content-3">
+            <h1 align="center">Rencontrer d'autres agents immobiliers</h1>
+        </section> -->
+        <!-- <section class="content content-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab exercitationem rem architecto expedita, nostrum
+            dolorem iusto neque enim at debitis ut illum quasi ducimus cum nulla et eligendi laboriosam odio nemo maxime
+            aliquid. Nulla natus commodi ut nesciunt nostrum aut sequi, placeat eius ab eum eaque rerum laudantium
+            corporis voluptatum. Optio, fuga accusantium. Voluptates consectetur vero maxime possimus assumenda harum
+            impedit porro mollitia id ab perspiciatis exercitationem, inventore placeat ratione repellendus. Laboriosam,
+            veniam? Nostrum distinctio ipsam aperiam nisi quasi iste modi ipsa dolores voluptatibus impedit pariatur
+            aliquid vel cum doloremque, illum dicta et voluptatum iusto magnam quis repudiandae qui. Porro iste iure
+            illo quidem maiores exercitationem harum. Officia suscipit numquam iure et rem, nemo quae, ratione
+            voluptatum molestias iusto adipisci architecto, beatae hic atque. Asperiores aliquam pariatur mollitia, in
+            totam officiis dolor officia. Iusto et pariatur totam nostrum ut ipsam. Provident perspiciatis minima, quam
+            quas sunt vel iure. Nostrum aperiam reiciendis reprehenderit excepturi similique voluptatum commodi, nemo,
+            quas optio dolorum aut distinctio a odit itaque est hic ad! Consequatur id quisquam quasi maiores quos
+            reiciendis assumenda minima sed cumque deserunt repellendus alias vero explicabo quibusdam officia odit
+            laborum corrupti vel, doloribus, ipsa, nemo voluptates natus. Quo officia nesciunt aliquam perspiciatis?
+        </section> -->
+    </main>
+
+    <footer>
+        Mon bas de page
+    </footer>
+</body>
+
+</html>

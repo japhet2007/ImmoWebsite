@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'ajout d'un bien</title>
+    <link rel="stylesheet" href="../../Assets/css/addGood.css">
+    <link rel="stylesheet" href="../../Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Assets/fonts/css/all.min.css">
+    <link rel="stylesheet" href="../../Assets/css/jquery-te-1.4.0.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/css/multi-select-tag.css">
+</head>
+<body>
+    <div class="container-fluid" id="all">
+        <div class="row justify-content-center">
+            <div class="col-md-10  text-white" style="font-family: behavior;">
+                <form method="post">
+                    <h2 class="text-center h2">Ajouter un bien</h2>
+                    <div class="text-center mb-4" style=" font-family: poppins;">
+                        <button class="btn btn-outline-success me-4" type="button">Automobile</button>
+                        <button class="btn btn-outline-warning active" type="button">Immobilier</button>
+                    </div>
+                    <div class="row py-2" id="immobilier">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <label for="type" class="form-label">Type de la propriete</label>
+                            <select name="type" id="type" class="form-select">
+                                <option value="1">Appartement</option>
+                                <option value="2">Chambre</option>
+                                <option value="3"></option>
+                            </select>
+
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <label for="chambre" class="form-label">Pieces</label>
+                            <input type="number" min="0" step="0" class="form-control" name="superficie" id="chambre"
+                                placeholder="Nombre de pieces">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <label for="superficie" class="form-label">Superficie</label>
+                            <input type="number" min="0" step="0" class="form-control" name="superficie" id="superficie"
+                                placeholder="Superficie">
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6">
+                            <label for="unite" class="form-label">Unite de la superficie</label>
+                            <select name="chambre" id="chambre" class="form-select">
+                                <option value="1">m²</option>
+                                <option value="2">ha</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-8  col-md-4 col-sm-6">
+                            <label for="libelle" class="form-label text-center">Titre</label>
+                            <input type="text" min="0" step="0" class="form-control text-center" name="libelle"
+                                id="libelle" placeholder="Titre de la propriete">
+                        </div>
+                        
+
+
+                        <div class="row justify-content-center my-3">
+                            <button class="btn btn-secondary w-50" type="button" id="okaybtn">Autres champs</button>
+                        </div> 
+                        <div class="row my-3">
+                            <div class="col-lg-3  col-md-4 col-12  d-md-flex d-grid mx-auto">
+                                <input type="button" name="Enregistrer" class="btn btn-lg btn-success"
+                                    value="Enregistrer">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="modal modal-md fade" id="otherForm">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="btn btn-close bg-danger" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form method="post" action="#" style="font-family: arial;">
+
+                                    <div class="row py-2 gy-3 align-items-center text-dark" id="immobilier">
+                                        <div class="col-lg-12 col-md-4  col-sm-6 align-items-center">
+                                            <label for="contrat" class="form-label">Type de contrat</label>
+                                            <select name="contrat" id="contrat" multiple class="form-select" required>
+                                                <option value="1">Vente</option>
+                                                <option value="2">Achat</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-4 col-sm-6 align-items-center">
+                                            <label for="prix" class="form-label">Prix</label>
+                                            <input type="number" min="0" step="1" name="prix" class="form-control"
+                                                id="prix" placeholder="prix du bien" required>
+                                        </div>
+                                        <div class="col-lg-6 col-md-4  col-sm-6">
+                                            <label for="devise" class="form-label">Devise</label>
+                                            <select name="devise" id="devise" class="form-select" required>
+                                                <option value="1">Franc CFA</option>
+                                                <option value="2">Euro</option>
+                                                <option value="3">Dollard</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-4 col-sm-6">
+                                            <label for="villeBien" class="form-label">Ville</label>
+                                            <input type="text" required name="villeBien" id="villeBien" class="form-control" placeholder="ville du Bien" id="quartierBien">
+                                        </div>
+                                        <div class="col-lg-6 col-md-4 col-sm-6">
+                                            <label for="quartierBien" class="form-label">Quartier</label>
+                                            <input type="text" required name="quartierBien" class="form-control" placeholder="Quartier" id="quartierBien">
+                                        </div>
+                                        <div class="col-lg-12 col-md-4 col-sm-6">
+                                            <label for="descriptionB" class="form-label">Description du bien</label>
+                                            <textarea name="descriptionB" required class="form-control"
+                                                id="descriptionB"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-md-4 col-sm-6">
+                                            <label for="imagepr" class="form-label">image de couverture</label>
+                                            <input type="file" name="imagepr" class="form-control"
+                                                accept=".jpg, .png, .gif, .jpeg, .webp, .avif" id="image">
+                                        </div>
+                                        <div class="col-lg-12 col-md-4 col-sm-6">
+                                            <label for="otherImage" class="form-label">Autres images</label>
+                                            <input type="file" name="otherImage" class="form-control" multiple
+                                                accept=".jpg, .png, .gif, .jpeg, .webp, .avif" id="image">
+                                        </div>
+                                        <div class="col-lg-3 mx-auto col-md-4 col-sm-6">
+                                            <input type="button" name="suImmo" id="suImmo" data-bs-dismiss="modal"
+                                                class="btn btn-lg btn-success" value="OK">
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../Assets/js/jquery.min.js"></script>
+    <script src="../../Assets/js/jquery-te-1.4.0.min.js"></script>
+    <script src="../../Assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@3.1.0/dist/js/multi-select-tag.js"></script>
+    <script>
+        //Gestion du champ a valeur multiple
+        new MultiSelectTag('contrat',{
+            placeholder:'Veuillez effectuer un choix',
+            rounded: true,    
+            tagColor: {
+                textColor: '#fff',
+                borderColor: '#bdb78b',
+                bgColor: ' #ff8c00',
+            }
+        })  
+    </script>
+    <script>
+        $(document).ready(function () {
+            //Affichage du modal
+            $('#okaybtn').click(function () {
+                $('#otherForm').modal("show");
+            })
+
+            //Import du jqte
+            $('#descriptionB').jqte();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+:root{
+    /* ================================ Couleurs ============================ */
+    --color-4: #EB7914;
+    --color-7: #f0ece2;
+    --color-8: #fafafaea;
+    --color-11: #425303;
+    --color-12: #48276db2;
+    --color-13: #2e0366e7;
+    
+    /* ============================= Polices ================================= */
+    --font-family-2: "behavior";
+    --font-family-3: "pesaro";
+    --font-family-4: "ladyrose";
+    --font-family-5: "poppins";
+}
+#arrondi{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+#dark{
+    color: var(--color-12);
+    text-shadow: 0 3px 3px var(--color-);
+}
+#orange{
+    color: var(--color-4)
+}
+.hmax{
+    height: 100vh;
+    width: 97vw;
+}
+
+#bg4{
+    background-color:  var(--color-4);
+}
+
+#bg8{
+    background-color:  var(--color-8);
+}
+
+#bg12{
+    background-color:  var(--color-12);
+}
+#bg7{
+    background-color:  var(--color-7);
+}
+
+#bg_dropdown{
+    background-color: var(--color-6);
+}
+#poppins{
+    font-family: var(--font-family-5);
+}
+/* ====================== Gestion du slider de l'accueil =============================== */
+
+.slide_title2{
+    animation: appear 1.5s ease-in-out  forwards;
+}
+.slide_title{
+    animation: appear 1.2s ease-in-out   forwards;
+}
+.slide_content{
+    animation: appear 2s ease-in-out    forwards;
+}
+/* =============== ========== End slider ================================================= */
+
+html{
+    scroll-behavior: smooth;
+    margin-top: 60px;
+    box-sizing: border-box;   
+}
+/* ================================ reset default ====================================== */
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    font-family: var(--font-family-3);
+}
+
+.color-icons{
+    color: var(--color-8);
+    font-size: 1.3em;
+}
+#navbar{
+    background-color: var(--color-12);
+    box-shadow: 2px 5px 5px var(--color-12);
+}
+div ul#liens{
+    font-size: clamp(1em, 1.1em, 1.3em);
+    color: var(--color-10);
+   
+}
+a{
+    transition:all 1s;
+}
+.icoDropdown{
+    color: var(--color-8);
+}
+.dash_text{
+    color: var(--color-4);
+    text-shadow: 0 1px 1px var(--color-8);
+    font-size: 1.2em;
+}
+.lien:hover{
+    transition:all 1s;
+    padding: 15px;
+    border-radius: 3px;
+    animation: opaque 0.5s ease-in-out forwards;
+}
+@keyframes opaque {
+    from{
+        opacity: 0.5;
+        transform: translate(0, 10);
+        transform: scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+        transform: scale(1.1);
+    }
+}
+
+div .texte{
+    color: var(--color-4);
+}
+div li{
+    padding: 3px 7px;
+}
+::placeholder{
+    text-align: center;
+    color: var(--color-10);
+}
+
+/* #navbar{
+    animation: appear 1s ease-in-out  1  forwards;
+} */
+
+#logo{
+    animation: appear 1s ease-in-out   1  alternate;
+}
+#navbarcollapse{
+    animation: appear 1s ease-in-out   1  alternate;
+}
+@keyframes appear{
+    from{
+        opacity:0;
+        transform: translate(0, 100px);
+        filter: blur(3px);
+    }
+    to{
+        opacity:1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+.ladyrose{
+    font-family: "ladyrose";
+}
+section{
+    /* min-height: 100vh; */
+    opacity: 0;
+    transform: translateY(50px);
+    /* transition: transform 0.7s ease, opacity 0.7s ease; */
+}
+section.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover{
+    box-shadow: 0px 30px 30px  var(--color-12);
+    transform: scale(1.09);
+    opacity: 1;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.card img{
+    opacity: 0.8;
+}
+.card:hover img{
+    opacity: 1;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.card{
+    min-height: 300px;
+}
+.card-body{
+    min-height:100px;
+}

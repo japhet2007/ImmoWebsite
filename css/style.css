@@ -1,0 +1,6 @@
+.actif{
+    border: 1px dashed white; 
+}
+.sidebar,.content {
+    transition: all 500ms;
+}

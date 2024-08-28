@@ -1,0 +1,196 @@
+:root{
+    /* ================================ Couleurs ============================ */
+    --bg-pink-1: rgb(214, 107, 107);
+    --bg-gray-2: rgb(213, 238, 238);
+    --bg-blue-3: rgba(35, 11, 246, 0.982);
+    --bg-dark-4: rgb(45, 44, 44);
+    --bg-pink-5: rgb(247, 14, 91);
+    --bg-green-6: rgb(34, 247, 14);
+
+    --text-color-1: rgb(12, 236, 225);
+    --text-color-2: rgb(95, 97, 97);
+    --text-color-3: rgba(42, 1, 43, 0.669);
+    --text-color-4: rgb(45, 44, 44);
+
+    /* ============================= Polices ================================= */
+    --font-family-1: "montserrat";
+    --font-family-2: "behavior";
+    --font-family-3: "pesaro";
+    --font-family-4: "ladyrose";
+    --font-family-5: "poppins";
+
+    /* ============================ Tailles =================================== */
+    --size-1: 1em;
+    --size-2: 1.2em;
+    --size-3: 1.4em;
+    --size-4: 1.6em;
+
+    /* =========================== padding =================================== */
+    --pad-1: 5px;
+    --pad-2: 10px;
+    --pad-3: 15px;
+    --pad-4: 20px;
+}
+.color-icons{
+    color: rgb(246, 10, 250);
+    font-size: var(--size-2);
+}
+.texte{
+    color: white;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+   
+}
+a{
+    text-decoration: none;
+    
+}
+header{
+    position: relative;
+    font-family: var(--font-family-3);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar #logo{
+    border-radius: 50%;
+    
+}
+.navbar .menu4{
+    padding:6px;
+    border: 3px solid red;
+    background-color: rgba(139, 5, 79, 0.403);
+}
+.navbar.nav-2, .menu{
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-dark-4);
+    align-items:center;
+}
+.navbar.nav-1{
+    background-color: var(--bg-pink-1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .saveGood{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: var(--pad-2);
+    background: none;
+    border: 3px solid rgba(73, 40, 47, 0.631);
+    border-radius: 3px;
+    font-size: var(--font-family-5);
+    font-weight: bold;
+    transition: 1s;
+    animation: turn 2s ease-in-out infinite;
+    
+}
+.navbar .saveGood:hover{
+    transform: scale(1.07);
+   
+}
+.navbar ul li{
+    display: inline;
+    padding: 3px 5px;
+}
+.social-media .contact{
+    font-family: var(--font-family-5);
+}
+.navbar ul li a{
+   color: white;
+}
+/* .navbar ul li:hover{
+   background-color: rgb(234, 213, 16);
+   padding: 23px 1px;
+} */
+.navbar #search-icon{
+    position: absolute;
+    font-size: var(--size-4);
+    color: var(--bg-blue-3);
+    right: 20px;
+    transform: translateY(10px);
+}
+
+.navbar #search{
+    width: 400px;
+    padding: var(--pad-2);
+    outline: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.navbar #search:focus{
+    box-shadow: 3px 2px 3px var(--bg-pink-1);
+}
+.navbar .research{
+    display: flex;
+    position: relative;
+}
+.social-media{
+    font-size: 1.4em;
+}
+.social-media i:nth-child(2){
+    color: var(--bg-blue-3);
+}
+.social-media i:nth-child(3){
+    color: var(--bg-blue-3);
+}
+.social-media i:nth-child(4){
+    color: var(--bg-pink-5);
+}
+.social-media i:nth-child(5){
+    color: var(--bg-green-6);
+}
+::placeholder{
+    text-align: center;
+    font-size: var(--size-2);
+    font-family: var(--font-family-4);
+    animation: opaque 1s ease infinite;
+}
+section{
+    height: 100vh;
+}
+section:nth-child(odd){
+    background-color: var(--bg-gray-2);
+}
+@keyframes opaque {
+    0%{
+        opacity: 0;
+        color: red;
+    }
+    100%{
+        opacity: 1;
+        color: rgb(38, 0, 255);
+    }
+}
+@keyframes turn {
+    0%{
+        transform: translateY(10px);
+        transform: scale(1);
+    }
+    100%{
+        transform: translateY(-10px);
+        transform: scale(1.09);
+    }
+}
+.subLocation{
+    display: none;
+}
+nav .menu .location:hover .subLocation{
+    display: block;
+}
+
+.content-1{
+    background-image: url(../../../public/Images/h7.jpg);
+}
+
+.HomeImage{
+    width: auto;
+    object-fit: cover;
+}
+
